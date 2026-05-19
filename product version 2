@@ -1,0 +1,87 @@
+
+
+select * from FB_ENT_PRODUCT_ASSOCIATION_TBL WHERE PKey_pkey = '2293879E-B66B-4A64-91E9-79065C6D1A70'
+
+--------------------------------------------------------------------------------------------------------
+
+begin tran
+
+INSERT INTO FB_ENT_PRODUCT_TBL values(newid(),2,NULL,NULL,'qbeae_uaegeneric_smart','UAE Generic SMART',2,'Active','2026-05-19 00:00:00.000',NULL)
+
+rollback
+
+select * from FB_ENT_PRODUCT_TBL where PKey_pkey like '9191A181-B2D0-42B2-8C0D-272BF2CD8D50'
+select * from FB_ENT_PRODUCT_INFO_TBL where ProductKey_pkey='9191A181-B2D0-42B2-8C0D-272BF2CD8D50'
+
+--select * from FB_ENT_PRODUCT_INFO_TBL where ProductKey_pkey='6E6A10E2-5837-4EEC-AE1A-DFEDBC759E60'
+------------------------------------------------smart--------------------------------------------------------
+begin tran
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','CoverType','Values::SMART Standard|||SMART Plus|||SMART Prestige|||SMART Ultimate')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','Eligibility','Values::  Code:EliN0.30Mths/1000kms##MinAge:0##MinDays:0##MinMileage:0##MaxAge:0##MaxDays:30##MaxMileage:1000##MinMWExpiryMonthsOffset:-1##MinMWExpiryMileageOffset:-1##MaxMWExpiryMonthsOffset:-1##MaxMWExpiryMileageOffset:-1|||  Code:EliN48.0Mths/100000kms##MinAge:0##MinDays:31##MinMileage:1001##MaxAge:48##MaxDays:0##MaxMileage:100000##MinMWExpiryMonthsOffset:-1##MinMWExpiryMileageOffset:-1##MaxMWExpiryMonthsOffset:-1##MaxMWExpiryMileageOffset:-1|||  Code:EliN60.0Mths/100000kms##MinAge:48##MinDays:1##MinMileage:1001##MaxAge:60##MaxDays:0##MaxMileage:100000##MinMWExpiryMonthsOffset:-1##MinMWExpiryMileageOffset:-1##MaxMWExpiryMonthsOffset:-1##MaxMWExpiryMileageOffset:-1')
+
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','TermMthsBand','Values::12|||24|||36')
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','TermMileageBand','Values::30000|||60000|||90000')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','PurchaseType','Values::Optional')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','Model','Values::All')
+
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','EngineCC','Values::Code:All##Min:0##Max:9999')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','DriveType','Values::DT--')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','Weight','Values::Code:N/A##Min:0##Max:999999999')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','SoldPriceBand','Values::Code:VC--##Min:0##Max:999999999')
+
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','VehicleType','Values::VT--')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','Usage','Values::US--')
+
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES ('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','ClaimLimitBand','Values::Code:800/2000##PerClaim:800##Aggregate:2000|||Code:800/3200##PerClaim:800##Aggregate:3200|||Code:800/4500##PerClaim:800##Aggregate:4500|||Code:1300/2000##PerClaim:1300##Aggregate:2000|||Code:1300/3200##PerClaim:1300##Aggregate:3200|||Code:1300/4500##PerClaim:1300##Aggregate:4500|||Code:6300/7200##PerClaim:6300##Aggregate:7200|||Code:6300/9300##PerClaim:6300##Aggregate:9300|||Code:6300/12000##PerClaim:6300##Aggregate:12000|||Code:8000/15000##PerClaim:8000##Aggregate:15000|||Code:8000/17000##PerClaim:8000##Aggregate:17000|||Code:8000/22000##PerClaim:8000##Aggregate:22000')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','ClaimExcessBand','Values::CE--')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','PaymentFrequency','Values::PF--')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','SaleType','Values::Dealer')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','Location','Values::AE')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'BandInfo','Wildcard','Values::WC--')
+
+
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'GroupInfo','Standard','Values::ID:1##Name:DVP##Min:0.00##Max:0.00##Std:100.00##Type:Percentage##Level:High##List:None|||ID:2##Name:Admin Fee %##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:3##Name:Fronting Fee %##Min:0.00##Max:0.00##Std:5.00##Type:Percentage##Level:High##List:None|||ID:4##Name:Marketing Allowance %##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:5##Name:Brokerage##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:6##Name:Parameter 6##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:7##Name:Parameter 7##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:8##Name:Parameter 8##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:9##Name:Parameter 9##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:10##Name:Retention##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:11##Name:T&Cs##Min:0##Max:0##Std:0##Type:Absolete##Level:Low##List:HS Al Shaali (BAIC SMART and Key Cover)')
+
+INSERT INTO FB_ENT_PRODUCT_INFO_TBL VALUES('9191A181-B2D0-42B2-8C0D-272BF2CD8D50',1,'GroupInfo','Campaign','Values::ID:1##Name:DVP##Min:0.00##Max:0.00##Std:100.00##Type:Percentage##Level:High##List:None|||ID:2##Name:Admin Fee %##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:3##Name:Fronting Fee %##Min:0.00##Max:0.00##Std:5.00##Type:Percentage##Level:High##List:None|||ID:4##Name:Marketing Allowance %##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:5##Name:Brokerage##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:6##Name:Parameter 6##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:7##Name:Parameter 7##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:8##Name:Parameter 8##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:9##Name:Parameter 9##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:10##Name:Retention##Min:0.00##Max:0.00##Std:0.00##Type:Percentage##Level:High##List:None|||ID:11##Name:T&Cs##Min:0##Max:0##Std:0##Type:Absolete##Level:Low##List:HS Al Shaali (BAIC SMART and Key Cover)')
+
+
+rollback
+
+
+select * from FB_ENT_PRODUCT_INFO_TBL where ProductKey_pkey like '9191A181-B2D0-42B2-8C0D-272BF2CD8D50'
+
+
+
+--INSERT INTO INFO_STATIC_TBL 
+--------------------------------------------------------------------------------------------------------
+
+
+begin tran
+
+INSERT INTO FB_ENT_INFO_STATIC_TBL values('2026-05-19 00:00:00.000','qbeae_uaegeneric_smart_policy_2','qbeae_uaegeneric_smart','Policy',382,228,-1,56,-1,-1,-1,'UAE Generic SMART',2,-1)
+
+rollback
+
+select * from FB_ENT_INFO_STATIC_TBL order by StartDate desc 
+select * from FB_ENT_INFO_STATIC_TBL where scheme='qbeae_uaegeneric_smart' order by StartDate desc 
+
+
+--------------------------------------------------------------------------------------------------------
